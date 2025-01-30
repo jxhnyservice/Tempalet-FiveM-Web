@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>FiveM Community</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <div class="nav-content">
+        <div class="logo">
+          <span class="server-name">FiveM Server</span>
+        </div>
+        <div class="nav-links">
+          <a href="/" class="active">Home</a>
+          <a href="/shop.html">Shop</a>
+          <a href="/rules.html">Rules / Regeln</a>
+          <a href="/team.html">Team</a>
+          <button class="language-toggle" onclick="toggleLanguage()">
+            <i class="fas fa-globe"></i>
+            <span>DE/EN</span>
+          </button>
+        </div>
+        <button class="join-button">
+          <i class="fas fa-play"></i> <span class="lang-de">Jetzt spielen</span><span class="lang-en">Play now</span>
+        </button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-content">
+        <div class="server-status">
+          <span class="status-indicator online"></span>
+          <span class="status-text">
+            <span class="lang-de">Server Online</span>
+            <span class="lang-en">Server Online</span>
+          </span>
+        </div>
+        <h1>
+          <span class="lang-de">Willkommen auf unserem FiveM Server</span>
+          <span class="lang-en">Welcome to our FiveM Server</span>
+        </h1>
+        <p>
+          <span class="lang-de">Erlebe Roleplay auf einem neuen Level</span>
+          <span class="lang-en">Experience roleplay on a new level</span>
+        </p>
+        <div class="server-stats">
+          <div class="stat">
+            <i class="fas fa-users"></i>
+            <span id="player-count">0/64</span>
+            <span class="stat-label">
+              <span class="lang-de">Spieler Online</span>
+              <span class="lang-en">Players Online</span>
+            </span>
+          </div>
+          <div class="stat">
+            <i class="fas fa-signal"></i>
+            <span>connect.server.com</span>
+            <span class="stat-label">
+              <span class="lang-de">Server IP</span>
+              <span class="lang-en">Server IP</span>
+            </span>
+          </div>
+          <div class="stat">
+            <i class="fas fa-clock"></i>
+            <span id="server-uptime">99.9%</span>
+            <span class="stat-label">
+              <span class="lang-de">Uptime</span>
+              <span class="lang-en">Uptime</span>
+            </span>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <i class="fas fa-chevron-down"></i>
+      </div>
+    </header>
+
+    <main>
+      <section class="features">
+        <h2>
+          <span class="lang-de">Unsere Features</span>
+          <span class="lang-en">Our Features</span>
+        </h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <i class="fas fa-car"></i>
+            <h3>
+              <span class="lang-de">Custom Fahrzeuge</span>
+              <span class="lang-en">Custom Vehicles</span>
+            </h3>
+            <p>
+              <span class="lang-de">Über 500 einzigartige Fahrzeuge</span>
+              <span class="lang-en">Over 500 unique vehicles</span>
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>
+              <span class="lang-de">Jobs & Wirtschaft</span>
+              <span class="lang-en">Jobs & Economy</span>
+            </h3>
+            <p>
+              <span class="lang-de">Dynamisches Wirtschaftssystem</span>
+              <span class="lang-en">Dynamic economy system</span>
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-house"></i>
+            <h3>
+              <span class="lang-de">Immobilien</span>
+              <span class="lang-en">Real Estate</span>
+            </h3>
+            <p>
+              <span class="lang-de">Eigene Häuser & Apartments</span>
+              <span class="lang-en">Own houses & apartments</span>
+            </p>
+          </div>
+          <div class="feature-card">
+            <i class="fas fa-users"></i>
+            <h3>
+              <span class="lang-de">Community</span>
+              <span class="lang-en">Community</span>
+            </h3>
+            <p>
+              <span class="lang-de">Aktive & freundliche Community</span>
+              <span class="lang-en">Active & friendly community</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="news">
+        <h2>
+          <span class="lang-de">Aktuelle News</span>
+          <span class="lang-en">Latest News</span>
+        </h2>
+        <div class="news-grid">
+          <article class="news-card">
+            <div class="news-image"></div>
+            <div class="news-content">
+              <div class="news-meta">
+                <span class="category">Update</span>
+                <span class="date">22.12.2023</span>
+              </div>
+              <h3>
+                <span class="lang-de">Neues Update</span>
+                <span class="lang-en">New Update</span>
+              </h3>
+              <p>
+                <span class="lang-de">Neue Fahrzeuge und Features sind verfügbar!</span>
+                <span class="lang-en">New vehicles and features are available!</span>
+              </p>
+              <a href="#" class="read-more">
+                <span class="lang-de">Weiterlesen</span>
+                <span class="lang-en">Read more</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+          <article class="news-card">
+            <div class="news-image event-image"></div>
+            <div class="news-content">
+              <div class="news-meta">
+                <span class="category">Event</span>
+                <span class="date">21.12.2023</span>
+              </div>
+              <h3>
+                <span class="lang-de">Community Event</span>
+                <span class="lang-en">Community Event</span>
+              </h3>
+              <p>
+                <span class="lang-de">Großes Rennevent am Wochenende</span>
+                <span class="lang-en">Big racing event this weekend</span>
+              </p>
+              <a href="#" class="read-more">
+                <span class="lang-de">Weiterlesen</span>
+                <span class="lang-en">Read more</span>
+                <i class="fas fa-arrow-right"></i>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="join-community">
+        <div class="join-content">
+          <h2>
+            <span class="lang-de">Werde Teil unserer Community</span>
+            <span class="lang-en">Join our Community</span>
+          </h2>
+          <p>
+            <span class="lang-de">Trete unserem Discord bei und bleibe immer up to date!</span>
+            <span class="lang-en">Join our Discord and stay up to date!</span>
+          </p>
+          <div class="social-buttons">
+            <a href="#" class="discord-button">
+              <i class="fab fa-discord"></i>
+              <span class="lang-de">Discord beitreten</span>
+              <span class="lang-en">Join Discord</span>
+            </a>
+            <a href="#" class="twitter-button">
+              <i class="fab fa-twitter"></i>
+              <span class="lang-de">Folge uns</span>
+              <span class="lang-en">Follow us</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>
+            <span class="lang-de">Links</span>
+            <span class="lang-en">Links</span>
+          </h4>
+          <a href="/discord">Discord</a>
+          <a href="/forum">Forum</a>
+          <a href="/shop">Shop</a>
+        </div>
+        <div class="footer-section">
+          <h4>
+            <span class="lang-de">Rechtliches</span>
+            <span class="lang-en">Legal</span>
+          </h4>
+          <a href="/impressum">
+            <span class="lang-de">Impressum</span>
+            <span class="lang-en">Imprint</span>
+          </a>
+          <a href="/datenschutz">
+            <span class="lang-de">Datenschutz</span>
+            <span class="lang-en">Privacy Policy</span>
+          </a>
+          <a href="/agb">
+            <span class="lang-de">AGB</span>
+            <span class="lang-en">Terms</span>
+          </a>
+        </div>
+        <div class="footer-section">
+          <h4>
+            <span class="lang-de">Social Media</span>
+            <span class="lang-en">Social Media</span>
+          </h4>
+          <div class="social-links">
+            <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2023 FiveM Server. 
+          <span class="lang-de">Alle Rechte vorbehalten.</span>
+          <span class="lang-en">All rights reserved.</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
